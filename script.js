@@ -17,9 +17,22 @@ function getMsDetailsByName() {
     if (request.status >= 200 && request.status < 400) {
 
       console.log(data.name);
-      document.getElementById("name").innerHTML = String(data.name)
-      document.getElementById("type").innerHTML = String(data.type)
-      document.getElementById("description").innerHTML = String(data.description)
+      var para_name = document.createElement('p');
+      para_name.innerHTML = String(data.name);
+      document.getElementsByTagName('body')[0].appendChild(para_name)
+      //document.getElementById("name").innerHTML = String(data.name)
+
+      var para_type = document.createElement('p');
+      para_type.innerHTML = String(data.type);
+      document.getElementsByTagName('body')[0].appendChild(para_type)
+
+      //document.getElementById("type").innerHTML = String(data.type)
+
+      var para_description = document.createElement('p');
+      para_description.innerHTML = String(data.description);
+      document.getElementsByTagName('body')[0].appendChild(para_description)
+
+      //document.getElementById("description").innerHTML = String(data.description)
       showTuxedoCalls(data)
       showPaths(data)
       showMethods(data)
