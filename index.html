@@ -7,8 +7,7 @@
 
   <title>REST API Frontend demo</title>
   
-  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="navmenu.css">
 
 </head>
 
@@ -16,20 +15,13 @@
 
   <div id="root"></div>
 
-  <h1>Retrieve Microservice details from DB</h1>
-  
-<form>
-  MS Name: <input type="text" id="msname" name="msname"><br><br>
-    <button type="button" onclick=getMsDetailsByName()> Search </button>
-</form>
-
-name:<p id="name">			</p>
-type: <p id="type">				</p>
-description: <p id="description">			</p>
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="search.html">Search</a></li>
+    <li><a href="save.html">Save</a></li>
+  </ul>
   
 
-<a href="save.html">Save to DB</a>
-  <script src="script.js"></script>
 </body>
 
 </html>
